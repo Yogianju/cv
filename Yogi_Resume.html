@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="../HTML/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../HTML/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .resume{
+        display: grid;
+        grid-template-columns: 3.5fr 8.5fr;
+        width: 80%;
+        border: solid black 1px;
+        margin-top: 20px;
+        
+        
+    }
+    .resume_left{
+        grid-column: 1/2;
+        border: solid black 1px;
+        padding: 15px;
+        background: #0bb5f4
+       
+    }
+    .resume_right{
+        padding: 15px;
+
+    }
+    #Profile_photo{
+        border-radius: 100%;
+    }
+    hr{
+        background-color: white;
+        height: 3px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .resume .resume_left ul{
+        list-style: none;
+    }
+   .Personal_detail li{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    
+  .resume .resume_left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .resume .icon i,
+  .resume .resume_right .resume_hobby ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .resume .resume_left ul li .data {
+    color: #b1eaff;
+  }
+  
+  .resume .resume_right .bold {
+    color: #0bb5f4;
+  }
+  .bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .resume .resume_right .resume_work ul li:before,
+  .resume .resume_right .resume_education ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+    
+  }
+  
+  .resume .resume_right .resume_work ul li:after,
+  .resume .resume_right .resume_education ul li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: #0bb5f4;
+  }
+  .resume .resume_right .resume_hobby ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  .resume .resume_right .resume_hobby ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color: #0bb5f4;
+  }
+  
+  .resume .resume_right .resume_hobby ul li i {
+    font-size: 30px;
+  }
+  
+  .resume .resume_right .resume_hobby ul li:before {
+    content:"";
+    position: absolute;
+    top: 40px;
+    right: -95px;
+    width: 95px;
+    height: 2px;
+    background: #0bb5f4;
+  }
+  
+  .resume .resume_right .resume_hobby ul li:last-child:before {
+    display: none;
+  }
+  .table,tr,td{
+    border-collapse: collapse;
+    padding-right: 30px;
+  }
+  .circle{
+        display: flex;
+    }
+   .circle div{
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px ;
+    
+   }
+   #icon{
+    font-size: 50px;
+   }
+
+</style>
+<body>
+    
+<div class="resume">
+    <div class="resume_left ">
+      <div class="resume_profile">
+        <img id="Profile_photo" src="Photo from Yogi.jpg" alt="profile_pic">
+      </div>
+      <div class="resume_content">
+        <div class="resume_item resume_info">
+          <div class="title">
+            <p class="font-weight-bold">S YOUGESH KUMAR</p>
+            <p class="regular">STUDENT</p>
+          </div>
+          <ul class="Personal_detail">
+            <li>
+              <div class="icon">
+              <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="data">
+               India <br>Vizag
+              </div>
+    
+            </li>
+            <li>
+              <div class="icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="data">
+                +91 8179071519
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="data">
+                yougesh978@gmail.com
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <div class="resume_item resume_skills">
+          <div class="title">
+            <p class="bold">skills</p>
+          </div>
+          <ul>
+            <li>
+              <div class="skill_name">
+                HTML
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:90%;"> 90%</div>
+            </div>
+            </li>
+            <li>
+              <div class="skill_name">
+                CSS
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:80%;"> 80%</div>
+            </div>
+            </li>
+            <li>
+              <div class="skill_name">
+                python
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:90%;"> 90%</div>
+            </div>
+            </li>
+            <li>
+              <div class="skill_name">
+                c
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:70%;"> 70%</div>
+            </div>
+            </li>
+            <li>
+                <div class="skill_name">
+                  JS
+                </div>
+                <div class="progress ">
+                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated bg-danger" style="width:30%;"> 30%</div>
+              </div>
+              </li>
+          </ul>
+        </div>
+        <hr>
+        <div class="resume_item resume_social">
+          <div class="title">
+            <p class="bold">Social</p>
+          </div>
+          <ul class="Personal_detail">
+            <li>
+              <div class="icon">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <div class="data"> 
+                <a href="https://www.facebook.com/leela.surabathula">Facebook</a>
+                <p >yougesh kumar</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="bi bi-twitter"></i>
+              </div>
+              <div class="data">
+                <a class="semi-bold" href="https://twitter.com/yogeshRocks12">Twitter</a>
+               
+                <p>youugesh@twitter</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="bi bi-youtube"></i>
+              </div>
+              <div class="data">
+                <a href="https://www.youtube.com/">Youtube</a>
+                <p>technomarvel@youtube</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <div class="data">
+                <a href="https://www.linkedin.com/in/yogesh-rocks-543376235/">Linkdin</a>
+                <p>S Yogesh Kumar</p>
+              </div>
+            </li>
+              <li>
+              <div class="icon">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div class="data">
+                <a href="https://www.instagram.com/yougesh9782021/">INSTAGRAM</a>
+                <p>yougesh9782021</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+   </div>
+   <div class="resume_right">
+    <h1>RESUME</h1>
+    <div class="resume_item resume_about">
+    <div class="resume_item resume_work">
+        <div class="title">
+           <p class="bold">Qualification</p>
+         </div>
+         <div></div>
+         <table class="table table-hover   table-bordered " style = 'width:100%' border="3" bgcolor="white" bordercolor="blue" align="center" border-radius="50px" >
+            <tr class="bg-secondary">
+                <th>Exam passed</th>
+                <th>Year of Study</th>
+                <th> Institution</th>
+                <th>Name of the board</th>
+                <th>Percentage / CGPA</th>
+                <th> Division obtained</th>
+            </tr>
+            <tr>
+                <td>10th board</td>
+                <td>2021</td>
+                <td>kvs</td>
+                <td>cbse</td>
+                <td>99%</td>
+                <td>section a</td>
+            </tr>
+            <tr>
+                <td>12th board</td>
+                <td>2022</td>                   
+                <td>kvs</td>
+                <td>cbse</td>
+                <td>100%</td>
+                <td>section a</td>
+            </tr>
+        </table>
+
+    </div>
+    <hr>
+    <div class="resume_item resume_education">
+      <div class="title">
+           <p class="bold">Education</p>
+         </div>
+      <ul>
+            <li>
+                <div class="date">2021 - 2025</div> 
+                <div class="info">
+                     <p class="semi-bold">Amrita University</p> 
+                  <p><i>Amrita University</i> is also known as Amrita vishwa vidya pheetam</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2000 - 2021</div>
+              <div class="info">
+                     <p class="semi-bold">KENDRIYA VIDYALAYA </p> 
+                  <p>It is a <u>central govt. school</u> </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+      <p class="bold">Interests</p>
+      <ol>
+        <li>Programming</li>
+        <li>Swimming</li>
+        <li>Reading books</li>
+      </ol></div></div>
+    <hr>
+    <div class="resume_item resume_hobby">
+      <div class="title">
+           <p class="bold">Hobbies</p>
+        </div>
+        <div class="circle">
+        <div class="c1"><span id="icon" class="bi bi-bicycle"></span></div>
+        <div class="c2"><span id="icon" class="bi bi-book"></span></div>
+        <div class="c3"><span id="icon" class="bi bi-music-note-beamed"></span></div> 
+        <div class="c2"><span id="icon" class="bi bi-controller"></span></div>   
+        </div>
+    
+  </div>
+  <hr>
+  <button class="btn btn-outline-primary ms-2"> like<span class="bi bi-hand-thumbs-up"></span></button>
+  <button class="btn btn-outline-primary ms-2"> share <span class="bi bi-share-fill"></span></button>
+
+</div>
+</html>
+    
+</body>
+</html>
